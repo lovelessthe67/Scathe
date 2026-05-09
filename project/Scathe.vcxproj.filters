@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="features">
+      <UniqueIdentifier>{a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\aimbot">
+      <UniqueIdentifier>{b2c3d4e5-f6a7-4b5c-8d7e-9f0a1b2c3d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\esp">
+      <UniqueIdentifier>{c3d4e5f6-a7b8-4c5d-8e7f-90a1b2c3d4e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\exploits">
+      <UniqueIdentifier>{d4e5f6a7-b8c9-4d5e-8f70-91a2b3c4d5e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\explorer">
+      <UniqueIdentifier>{e5f6a7b8-c9d0-4e5f-8071-92a3b4c5d6e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\notifications">
+      <UniqueIdentifier>{f6a7b8c9-d0e1-4f50-8172-93a4b5c6d7e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{07b8c9d0-e1f2-4061-8273-94a5b6c7d8e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\auth">
+      <UniqueIdentifier>{18c9d0e1-f203-4162-8374-95a6b7c8d9e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\storage">
+      <UniqueIdentifier>{29d0e1f2-0314-4263-8475-96a7b8c9d0e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{3ae1f203-1425-4364-8576-97a8b9c0d1e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\mem_module">
+      <UniqueIdentifier>{4bf20314-2536-4465-8677-98a9bac1d2e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\Players">
+      <UniqueIdentifier>{5c031425-3647-4566-8778-99bacad2e3f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{6d142536-4758-4667-8879-acbad3e4f5a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\helpers">
+      <UniqueIdentifier>{7e253647-5869-4768-8980-bdcae4f5a6b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{8f364758-697a-4869-9091-cebaf5f6b7c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\configs">
+      <UniqueIdentifier>{90475869-7a8b-496a-9192-dfcbf607c8d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\math">
+      <UniqueIdentifier>{0158697a-8b9c-407b-92a3-e0dcf718c9e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\task_sched">
+      <UniqueIdentifier>{12697a8b-9cad-417c-93a4-f1edf829d0fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\wallcheck">
+      <UniqueIdentifier>{237a8b9c-adbe-427d-a4b5-02fef93ad1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor">
+      <UniqueIdentifier>{348b9cad-becf-437e-b5c6-130f0a4be2fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\imgui">
+      <UniqueIdentifier>{459cadbe-cfd0-447f-c6d7-241f1b5cf3fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\imgui\backends">
+      <UniqueIdentifier>{56adbecf-d0e1-4580-d7e8-352f2c6d040e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\keyauth">
+      <UniqueIdentifier>{67bececf-d1f2-4691-e8f9-46303d7e151f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\overlay">
+      <UniqueIdentifier>{78cfeddf-e203-47a2-f90a-57414e8f2620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\overlay\ckeybind">
+      <UniqueIdentifier>{89d0eeef-f314-48b3-0a1b-68525f903731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\overlay\xorstr">
+      <UniqueIdentifier>{9ae1ff00-0425-49c4-1b2c-796360a14842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\overlay\Overlay">
+      <UniqueIdentifier>{0bf20011-1536-40d5-2c3d-8a7471b25953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\clipper2">
+      <UniqueIdentifier>{1c031122-2647-41e6-3d4e-9b8582c36a64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\vendor\imgui\imconfig.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\imgui.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\imgui_internal.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\backends\imgui_impl_dx11.h">
+      <Filter>vendor\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\backends\imgui_impl_win32.h">
+      <Filter>vendor\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\helpers\globals.h">
+      <Filter>ui\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\helpers\helpers.h">
+      <Filter>ui\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\Core.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\features\aimbot\silent.h">
+      <Filter>features\aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\auth\auth.h">
+      <Filter>core\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\auth\keyauth_config.h">
+      <Filter>core\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\configs\configs.hpp">
+      <Filter>utils\configs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\features\esp\esp.h">
+      <Filter>features\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\features\esp\crosshair.h">
+      <Filter>features\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\features\esp\bullet_tracers.h">
+      <Filter>features\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\features\esp\GetWeaponIcon.h">
+      <Filter>features\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\features\esp\visitor.h">
+      <Filter>features\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\features\esp\WeaponIcon.hpp">
+      <Filter>features\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\features\exploits\hitbox_expander.h">
+      <Filter>features\exploits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\features\notifications\NotificationManager.hpp">
+      <Filter>features\notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\features\explorer\explorer.h">
+      <Filter>features\explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\math\math.h">
+      <Filter>utils\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\engine\mem_module\memory.hpp">
+      <Filter>engine\mem_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\engine\Players\offsets.hpp">
+      <Filter>engine\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\storage\Globals.hpp">
+      <Filter>core\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\storage\include.h">
+      <Filter>core\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\systemtray.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\wallcheck\AABB.h">
+      <Filter>utils\wallcheck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\wallcheck\Wallcheck.h">
+      <Filter>utils\wallcheck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\overlay\ckeybind\keybind.hpp">
+      <Filter>vendor\overlay\ckeybind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\overlay\xorstr\xorstr.hpp">
+      <Filter>vendor\overlay\xorstr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\overlay\xorstr\json.hpp">
+      <Filter>vendor\overlay\xorstr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\overlay\Overlay\overlay.hpp">
+      <Filter>vendor\overlay\Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\keyauth\auth.hpp">
+      <Filter>vendor\keyauth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\keyauth\Haze.h">
+      <Filter>vendor\keyauth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\keyauth\json.hpp">
+      <Filter>vendor\keyauth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\keyauth\oxorany.h">
+      <Filter>vendor\keyauth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\keyauth\skStr.h">
+      <Filter>vendor\keyauth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\keyauth\utils.hpp">
+      <Filter>vendor\keyauth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\clipper\include\clipper2\clipper.h">
+      <Filter>vendor\clipper2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\clipper\include\clipper2\clipper.core.h">
+      <Filter>vendor\clipper2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\clipper\include\clipper2\clipper.engine.h">
+      <Filter>vendor\clipper2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\clipper\include\clipper2\clipper.offset.h">
+      <Filter>vendor\clipper2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\clipper\include\clipper2\clipper.rectclip.h">
+      <Filter>vendor\clipper2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\vendor\imgui\imgui.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_demo.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_draw.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_tables.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_widgets.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>vendor\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>vendor\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\helpers\helpers.cpp">
+      <Filter>ui\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\main.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\Core.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\features\aimbot\aimbot.cpp">
+      <Filter>features\aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\features\aimbot\silent.cpp">
+      <Filter>features\aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\auth\auth.cpp">
+      <Filter>core\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utils\configs\configs.cpp">
+      <Filter>utils\configs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\features\esp\esp.cpp">
+      <Filter>features\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\features\esp\crosshair.cpp">
+      <Filter>features\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\features\esp\bullet_tracers.cpp">
+      <Filter>features\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\features\esp\bullet_tracer_hook.cpp">
+      <Filter>features\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\features\exploits\Exploits.cpp">
+      <Filter>features\exploits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\features\exploits\hitbox_expander.cpp">
+      <Filter>features\exploits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\features\notifications\NotificationManager.cpp">
+      <Filter>features\notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="..\features\explorer\explorer.cpp">
+      <Filter>features\explorer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\engine\Players\cache.cpp">
+      <Filter>engine\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="..\engine\Players\class.cpp">
+      <Filter>engine\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utils\systemtray.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utils\task_sched\task_Schedular.cpp">
+      <Filter>utils\task_sched</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utils\wallcheck\Wallcheck.cpp">
+      <Filter>utils\wallcheck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\keyauth\utils.cpp">
+      <Filter>vendor\keyauth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\clipper\src\clipper.engine.cpp">
+      <Filter>vendor\clipper2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\clipper\src\clipper.offset.cpp">
+      <Filter>vendor\clipper2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\clipper\src\clipper.rectclip.cpp">
+      <Filter>vendor\clipper2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+</Project>

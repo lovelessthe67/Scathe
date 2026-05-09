@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F316E83-5AE5-4939-A723-305A94F48005}</ProjectGuid>
+    <RootNamespace>Scathe</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Scathe</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\build\</OutDir>
+    <IntDir>$(SolutionDir)..\random_files\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\vendor\imgui;$(ProjectDir)..\vendor\imgui\backends;$(ProjectDir)..\vendor\clipper\include;$(ProjectDir)..\vendor\keyauth;$(ProjectDir)..\vendor\overlay;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\vendor\keyauth;$(ProjectDir)..\vendor\dx11;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\build\</OutDir>
+    <IntDir>$(SolutionDir)..\random_files\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\vendor\imgui;$(ProjectDir)..\vendor\imgui\backends;$(ProjectDir)..\vendor\clipper\include;$(ProjectDir)..\vendor\keyauth;$(ProjectDir)..\vendor\overlay;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\vendor\keyauth;$(ProjectDir)..\vendor\dx11;$(LibraryPath)</LibraryPath>
+    <TargetName>Scathe</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\;..\vendor;..\vendor\imgui;..\vendor\imgui\backends;..\core;..\features;..\engine;..\ui;..\utils;..\vendor\clipper\include;..\vendor\keyauth;..\vendor\overlay;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;dwmapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\;..\vendor;..\vendor\imgui;..\vendor\imgui\backends;..\core;..\features;..\engine;..\ui;..\utils;..\vendor\clipper\include;..\vendor\keyauth;..\vendor\overlay;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;dwmapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\;..\vendor;..\vendor\imgui;..\vendor\imgui\backends;..\core;..\features;..\engine;..\ui;..\utils;..\vendor\clipper\include;..\vendor\keyauth;..\vendor\overlay;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;dwmapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\;..\vendor;..\vendor\imgui;..\vendor\imgui\backends;..\core;..\features;..\engine;..\ui;..\utils;..\vendor\clipper\include;..\vendor\keyauth;..\vendor\overlay;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;dwmapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <!-- Header Files -->
+  <ItemGroup>
+    <ClInclude Include="..\vendor\imgui\imconfig.h" />
+    <ClInclude Include="..\vendor\imgui\imgui.h" />
+    <ClInclude Include="..\vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="..\vendor\imgui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="..\vendor\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="..\ui\helpers\globals.h" />
+    <ClInclude Include="..\ui\helpers\helpers.h" />
+    <!-- Scathe Source Headers -->
+    <ClInclude Include="..\core\Core.hpp" />
+    <ClInclude Include="..\features\aimbot\silent.h" />
+    <ClInclude Include="..\core\auth\auth.h" />
+    <ClInclude Include="..\core\auth\keyauth_config.h" />
+    <ClInclude Include="..\utils\configs\configs.hpp" />
+    <ClInclude Include="..\features\esp\esp.h" />
+    <ClInclude Include="..\features\esp\crosshair.h" />
+    <ClInclude Include="..\features\esp\bullet_tracers.h" />
+    <ClInclude Include="..\features\esp\GetWeaponIcon.h" />
+    <ClInclude Include="..\features\esp\visitor.h" />
+    <ClInclude Include="..\features\esp\WeaponIcon.hpp" />
+    <ClInclude Include="..\features\exploits\hitbox_expander.h" />
+    <ClInclude Include="..\features\notifications\NotificationManager.hpp" />
+    <ClInclude Include="..\features\explorer\explorer.h" />
+    <ClInclude Include="..\utils\math\math.h" />
+    <ClInclude Include="..\engine\mem_module\memory.hpp" />
+    <ClInclude Include="..\engine\Players\offsets.hpp" />
+    <ClInclude Include="..\core\storage\Globals.hpp" />
+    <ClInclude Include="..\core\storage\include.h" />
+    <ClInclude Include="..\utils\systemtray.hpp" />
+    <ClInclude Include="..\utils\wallcheck\AABB.h" />
+    <ClInclude Include="..\utils\wallcheck\Wallcheck.h" />
+    <!-- Overlay Headers -->
+    <ClInclude Include="..\vendor\overlay\ckeybind\keybind.hpp" />
+    <ClInclude Include="..\vendor\overlay\xorstr\xorstr.hpp" />
+    <ClInclude Include="..\vendor\overlay\xorstr\json.hpp" />
+    <ClInclude Include="..\vendor\overlay\Overlay\overlay.hpp" />
+    <!-- Keyauth Headers -->
+    <ClInclude Include="..\vendor\keyauth\auth.hpp" />
+    <ClInclude Include="..\vendor\keyauth\Haze.h" />
+    <ClInclude Include="..\vendor\keyauth\json.hpp" />
+    <ClInclude Include="..\vendor\keyauth\oxorany.h" />
+    <ClInclude Include="..\vendor\keyauth\skStr.h" />
+    <ClInclude Include="..\vendor\keyauth\utils.hpp" />
+    <!-- Clipper Headers -->
+    <ClInclude Include="..\vendor\clipper\include\clipper2\clipper.h" />
+    <ClInclude Include="..\vendor\clipper\include\clipper2\clipper.core.h" />
+    <ClInclude Include="..\vendor\clipper\include\clipper2\clipper.engine.h" />
+    <ClInclude Include="..\vendor\clipper\include\clipper2\clipper.offset.h" />
+    <ClInclude Include="..\vendor\clipper\include\clipper2\clipper.rectclip.h" />
+  </ItemGroup>
+  <!-- Source Files -->
+  <ItemGroup>
+    <!-- ImGui Core -->
+    <ClCompile Include="..\vendor\imgui\imgui.cpp" />
+    <ClCompile Include="..\vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\vendor\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\vendor\imgui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\vendor\imgui\backends\imgui_impl_win32.cpp" />
+    <!-- Scathe Helpers -->
+    <ClCompile Include="..\ui\helpers\helpers.cpp" />
+    <ClCompile Include="..\core\main.cpp" />
+    <!-- Scathe Engine -->
+    <ClCompile Include="..\core\Core.cpp" />
+    <ClCompile Include="..\features\aimbot\aimbot.cpp" />
+    <ClCompile Include="..\features\aimbot\silent.cpp" />
+    <ClCompile Include="..\core\auth\auth.cpp" />
+    <ClCompile Include="..\utils\configs\configs.cpp" />
+    <ClCompile Include="..\features\esp\esp.cpp" />
+    <ClCompile Include="..\features\esp\crosshair.cpp" />
+    <ClCompile Include="..\features\esp\bullet_tracers.cpp" />
+    <ClCompile Include="..\features\esp\bullet_tracer_hook.cpp" />
+    <ClCompile Include="..\features\exploits\Exploits.cpp" />
+    <ClCompile Include="..\features\exploits\hitbox_expander.cpp" />
+    <ClCompile Include="..\features\notifications\NotificationManager.cpp" />
+    <ClCompile Include="..\features\explorer\explorer.cpp" />
+    <ClCompile Include="..\engine\Players\cache.cpp" />
+    <ClCompile Include="..\engine\Players\class.cpp" />
+    <ClCompile Include="..\utils\systemtray.cpp" />
+    <ClCompile Include="..\utils\task_sched\task_Schedular.cpp" />
+    <ClCompile Include="..\utils\wallcheck\Wallcheck.cpp" />
+    <!-- Keyauth -->
+    <ClCompile Include="..\vendor\keyauth\utils.cpp" />
+    <!-- Clipper2 -->
+    <ClCompile Include="..\vendor\clipper\src\clipper.engine.cpp" />
+    <ClCompile Include="..\vendor\clipper\src\clipper.offset.cpp" />
+    <ClCompile Include="..\vendor\clipper\src\clipper.rectclip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
+
+
